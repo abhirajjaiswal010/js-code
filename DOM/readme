@@ -1,0 +1,102 @@
+//? :- document.querySelector()
+//^ :-Description: Returns the first element within the document that matches the specified CSS selector(s).
+//example:-
+// let heading = document.querySelector("h1"); // Selects the first <h1> tag
+// let button = document.querySelector(".btn-primary"); // Selects the first element with class `btn-primary`
+
+//? :- document.querySelectorAll()
+//^ :-Description: Returns a static (non-live) NodeList of all elements that match the specified CSS selector(s).
+//example :- let listItems = document.querySelectorAll("ul li"); // Selects all <li> elements inside <ul>
+
+//? :- document.getElementById()
+//^ :-Description: Selects an element by its id attribute.
+//example :- let mainDiv = document.getElementById("main");
+
+//?document.getElementsByClassName()
+//^Description: Returns a live HTMLCollection of elements with the specified class name.
+//example- let cards = document.getElementsByClassName("card");
+
+//? document.getElementsByTagName()
+//^ Description: Returns a live HTMLCollection of all elements with the given tag name.
+//example :- let paragraphs = document.getElementsByTagName("p");
+
+
+//? element.textContent
+//^ Description: Gets or sets the text content of an element and its descendants.
+//example :- let heading = document.querySelector("h1");
+//heading.textContent = "Updated Heading"; // Changes text inside the <h1>
+
+//? element.innerHTML
+//^  Description: Gets or sets the HTML content of an element.
+//example :-let container = document.querySelector(".container");
+//container.innerHTML = "<p>This is a new paragraph.</p>";
+
+
+//? element.setAttribute()
+//^ Description: Adds a new attribute or changes the value of an existing attribute.
+
+//example :- let link = document.querySelector("a");
+//link.setAttribute("href", "https://example.com");
+
+
+//? element.getAttribute()
+//^ description : Retrieves the value of a specified attribute
+//example :- let link = document.querySelector("a");
+//console.log(link.getAttribute("href")); // Logs the href value
+
+
+//?element.classList
+//^ Description: Provides methods to add, remove, toggle, and check classes on an element.
+//& Methods:
+//* add(className): Adds a class.
+//* remove(className): Removes a class.
+//* toggle(className): Toggles a class.
+//* contains(className): Checks if a class exists.
+//example 
+// let button = document.querySelector(".btn");
+// button.classList.add("active");
+// button.classList.remove("disabled");
+// button.classList.toggle("hidden");
+// console.log(button.classList.contains("active")); // true
+
+//? element.appendChild()
+//^ Description: Adds a node as the last child of an element.
+//example
+// let newElement = document.createElement("p");
+// newElement.textContent = "This is a new paragraph.";
+// document.body.appendChild(newElement);
+//? element.removeChild()
+//^ Description: Removes a child node from an element
+//example 
+// let list = document.querySelector("ul");
+// let item = document.querySelector("li");
+// list.removeChild(item); // Removes the specified <li>
+
+
+//? element.style
+//^ Description: Used to apply inline styles directly to an element
+//example
+// let box = document.querySelector(".box");
+// box.style.backgroundColor = "blue";
+// box.style.width = "200px";
+
+//? element.addEventListener()
+//^ Description: Adds an event listener to an element.
+//! Syntax:element.addEventListener(event, callback);
+//Example:
+
+// let button = document.querySelector("button");
+// button.addEventListener("click", () => {
+//   alert("Button clicked!");
+// });
+
+//? element.removeEventListener()
+//^ Description: Removes a previously added event listener.
+//! Syntax:element.removeEventListener(event, callback);
+// Example:
+// function handleClick() {
+//   alert("Button clicked!");
+// }
+// let button = document.querySelector("button");
+// button.addEventListener("click", handleClick);
+// button.removeEventListener("click", handleClick);
