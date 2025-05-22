@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: #fff7f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#card {
+  height: 500px;
+  width: 300px;
+  background-color: #faf6e9;
+  border-radius: 20px;
+  border: 3px solid #b9b28a;
+  position: relative;
+}
+
+#storiyan {
+  height: 15%;
+  width: 100%;
+  border-radius: 17px 17px 0px 0px;
+  border-bottom: 3px solid #c1baa1;
+  display: flex;
+  align-items: center;
+  padding: 0px 6px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+/* Scrollbar container */
+#storiyan::-webkit-scrollbar {
+  height: 6px; /* Change for thinner/thicker bar */
+}
+
+/* Scrollbar track (background) */
+#storiyan::-webkit-scrollbar-track {
+  background: #faf1e6;
+  border-radius: 10px;
+}
+
+/* Scrollbar thumb (draggable part) */
+#storiyan::-webkit-scrollbar-thumb {
+  background: #504b38;
+  border-radius: 10px;
+}
+
+.story {
+  height: 60px;
+  width: 60px;
+  margin: 0px 6px;
+  border-radius: 50%;
+  border: 3px solid #ab886d;
+  flex-shrink: 0;
+}
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+#full_screen {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-size: cover;
+  position: absolute;
+  border-radius: 17px;
+  display: none;
+}
