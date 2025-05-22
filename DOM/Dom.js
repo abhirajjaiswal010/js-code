@@ -25,19 +25,21 @@
 //^ bulb program
 let bulb = document.querySelector("#bulb");
 var btn = document.querySelector("button");
-let isOn=false;
+let isOn = false;
 
 btn.addEventListener("click", function () {
-  if(isOn){
+  if (isOn) {
     bulb.style.backgroundColor = "black";
-  bulb.style.boxShadow="none"
-  btn.innerHTML="OFF"
-  isOn=false
-  }
-  else{
+    bulb.style.boxShadow = "none";
+    document.querySelector("body").style.backgroundColor = "#010B13";
+    btn.innerHTML = "OFF";
+    isOn = false;
+  } else {
     bulb.style.backgroundColor = "yellow";
-  bulb.style.boxShadow="0px 0px 50px 20px yellow"
-  btn.innerHTML="ON"
-  isOn=true
+    bulb.style.boxShadow = "0px 0px 50px 20px yellow";
+    document.querySelector("body").style.backgroundColor = "white";
+
+    btn.innerHTML = "ON";
+    isOn = true;
   }
 });
