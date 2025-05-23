@@ -4,6 +4,17 @@
 
 //alert(3+3) // we are using nodejs,not browser
 //! code should be readability
+//?✅ Check Data Type
+//?You can use the typeof operator:
+
+//& typeof "Hello";     // "string"
+//& typeof 42;          // "number"
+//& typeof true;        // "boolean"
+//& typeof undefined;   // "undefined"
+//& typeof null;        // "object" (quirk in JS)
+//& typeof {};          // "object"
+//& typeof [];          // "object"
+//& typeof function(){} // "function"
 
 //*----------------------------------------------------------------
 
