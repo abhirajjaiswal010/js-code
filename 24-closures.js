@@ -38,12 +38,27 @@ let green = document.querySelector("#green");
 //   document.body.style.backgroundColor = "green";
 // });
 
-function clickHandler(color) {
-  // document.body.style.backgroundColor = `${color}`;
-  return function () {
-    document.body.style.backgroundColor = `${color}`;
-  };
-}
+// function clickHandler(color) {
+//   // document.body.style.backgroundColor = `${color}`;
+//   return function () {
+//     document.body.style.backgroundColor = `${color}`;
+//   };
+// }
 
-document.getElementById("orange").onclick = clickHandler("orange");
-document.getElementById("green").onclick = clickHandler("green");
+// document.getElementById("orange").onclick = clickHandler("orange");
+// document.getElementById("green").onclick = clickHandler("green");
+
+//& mini project on closure tha is button counter
+function CreateClickCounter(){
+  let count =0
+  return function(){
+    count++;
+    document.getElementById('count').innerText=count
+  }
+}
+let btn = document.querySelector('button')
+const handleClick=CreateClickCounter();
+
+btn.addEventListener("click",handleClick
+  
+)
